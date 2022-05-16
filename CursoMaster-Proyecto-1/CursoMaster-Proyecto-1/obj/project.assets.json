@@ -9666,11 +9666,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pelet\\source\\repos\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\Proyecto-CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\pelet\\Documents\\GitHub\\CRUD-ASP.net-Core-MVC\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\Proyecto-CRUD.csproj",
       "projectName": "Proyecto-CRUD",
-      "projectPath": "C:\\Users\\pelet\\source\\repos\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\Proyecto-CRUD.csproj",
+      "projectPath": "C:\\Users\\pelet\\Documents\\GitHub\\CRUD-ASP.net-Core-MVC\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\Proyecto-CRUD.csproj",
       "packagesPath": "C:\\Users\\pelet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pelet\\source\\repos\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\obj\\",
+      "outputPath": "C:\\Users\\pelet\\Documents\\GitHub\\CRUD-ASP.net-Core-MVC\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pelet\\AppData\\Roaming\\NuGet\\NuGet.Config",

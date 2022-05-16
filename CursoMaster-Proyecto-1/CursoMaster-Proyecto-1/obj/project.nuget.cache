@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vZ8GXuorY3CRnWNG1bKJh7ZgR2qSNXKnm3r2+VRcw2/wBj/28FaMzqmlMYcQJbnLFDbW0PyOBbhq99BKYqafLQ==",
+  "dgSpecHash": "K4WnOZBJfY/v2LJl2LtiFIbc76ZWmi33DQCUfgJVaz/PHqvuRM1edcA9vZp6jHFDIUeXKZFTebpaeHOqKvOlUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pelet\\source\\repos\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\Proyecto-CRUD.csproj",
+  "projectFilePath": "C:\\Users\\pelet\\Documents\\GitHub\\CRUD-ASP.net-Core-MVC\\CursoMaster-Proyecto-1\\CursoMaster-Proyecto-1\\Proyecto-CRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pelet\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pelet\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
