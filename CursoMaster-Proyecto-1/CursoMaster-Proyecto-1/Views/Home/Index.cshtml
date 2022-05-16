@@ -1,0 +1,98 @@
+﻿@model IEnumerable<CursoMaster_Proyecto_1.Models.Usuarios>
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="float-right">
+            <a asp-action="Crear" asp-controller="Home" class="btn btn-success"><i class="bi bi-plus-circle"></i> Nuevo Usuario</a>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-12">
+        <div class="card card-border">
+            <div class="card card-header">
+                <h3><strong>Lista de Usuarios</strong></h3>
+            </div>
+            <div class="card card-body">
+                <div class="table-responsive">
+
+                    @if(Model.Count() >0)
+                    {
+                        <table class="table table-hover table-striped" id="tblUsuarios" width="100%" cellspacing="0">
+                            
+                            <thead class="table table-dark">
+                                <tr>
+                                <th class="text-center">@Html.DisplayNameFor(m=> m.Name)</th>
+                                <th class="text-center">@Html.DisplayNameFor(m=> m.phoneNumber)</th>
+                                <th class="text-center">@Html.DisplayNameFor(m=> m.DocumentiId)</th>
+                                <th class="text-center">@Html.DisplayNameFor(m=> m.Email)</th>
+                                <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var item in Model)
+                                {
+                                    <tr>
+                                        <td class="text-center">@Html.DisplayFor(m => item.Name)</td>
+                                        <td class="text-center">@Html.DisplayFor(m => item.phoneNumber)</td>
+                                        <td class="text-center">@Html.DisplayFor(m => item.DocumentiId)</td>
+                                        <td class="text-center">@Html.DisplayFor(m => item.Email)</td>
+                                        <td class="text-center">
+                                        <a class="btn btn-success bt-sm" asp-action="Editar" asp-controller="Home" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
+                                        <a class="btn btn-primary bt-sm" asp-action="Detalles" asp-controller="Home" asp-route-id="@item.Id"><i class="bi bi-person-lines-fill"></i></a>
+                                        <a class="btn btn-danger bt-sm" asp-action="Eliminar" asp-controller="Home" asp-route-id="@item.Id"><i class="bi bi-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <h3 class="text-center"><strong>NO HAY REGISTROS</strong></h3>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{ 
+    <script>
+        $(document).ready(function () {
+            //Llamar a datatable
+            $('#tblUsuarios').DataTable({
+                language: {
+                    "decimal": "",
+                    "emptyTable": "No hay información",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Ultimo",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+        });        
+    </script>
+}

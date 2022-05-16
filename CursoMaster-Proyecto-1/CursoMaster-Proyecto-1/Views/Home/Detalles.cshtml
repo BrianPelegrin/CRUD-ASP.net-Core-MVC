@@ -1,0 +1,22 @@
+﻿@model CursoMaster_Proyecto_1.Models.Usuarios
+
+@{
+    ViewData["Title"] = "Detalles de Usuario";
+}
+
+<center>
+    <div class="card" style="width:20rem;margin:20px 0 24px 0">
+  <img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar3.png" alt="image" style="width:100%">
+  <div class="card-body">
+    <h4 class="card-title">@Html.DisplayFor(m=>m.Name)</h4>
+    <p class="card-text">
+        Telefono: @Html.DisplayFor(m=>m.phoneNumber) <br />
+        Cedula: @Html.DisplayFor(m=>m.DocumentiId)  <br />
+        Correo: @Html.DisplayFor(m=>m.Email)    
+    
+    
+    </p>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Volver a la Lista</a>
+  </div>
+</div>
+</center>
